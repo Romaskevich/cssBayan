@@ -40,11 +40,11 @@ img {
     background: url("./assets/xmark.svg") 98%/0.9375rem no-repeat;
 }
 
-#slide1:checked~.bayan .item1 h2,
-#slide2:checked~.bayan .item2 h2,
-#slide3:checked~.bayan .item3 h2,
-#slide4:checked~.bayan .item4 h2 {
-  background: url("./assets/plus.svg") 98%/0.9375rem no-repeat;
+#slide1:checked~.bayan:hover .item1 h2,
+#slide2:checked~.bayan:hover .item2 h2,
+#slide3:checked~.bayan:hover .item3 h2,
+#slide4:checked~.bayan:hover .item4 h2 {
+    background: url("./assets/plus.svg") 98%/0.9375rem no-repeat;
 }
 
 .bayan .item1:hover h2,
@@ -107,15 +107,15 @@ img {
 }
 
 @media (max-width: 850px) {
-  .container {
-      width: 60%;
-      font-size: 0.8rem;
-  }
+    .container {
+        width: 60%;
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 520px) {
-  .container {
-      width: 80%;
-      font-size: 0.6rem;
-  }
+    .container {
+        width: 80%;
+        font-size: 0.6rem;
+    }
 }

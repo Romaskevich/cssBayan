@@ -37,21 +37,24 @@ img {
 }
 
 .bayan:hover h2 {
-    background: url("./assets/xmark.svg") 98%/0.9375rem no-repeat;
+    animation: x-icons 0.2s;
+    animation-fill-mode: forwards;
 }
 
 #slide1:checked~.bayan:hover .item1 h2,
 #slide2:checked~.bayan:hover .item2 h2,
 #slide3:checked~.bayan:hover .item3 h2,
 #slide4:checked~.bayan:hover .item4 h2 {
-    background: url("./assets/plus.svg") 98%/0.9375rem no-repeat;
+    animation: plus-icons 0.2s;
+    animation-fill-mode: forwards;
 }
 
 .bayan .item1:hover h2,
 .bayan .item2:hover h2,
 .bayan .item3:hover h2,
 .bayan .item4:hover h2 {
-    background-image: url("./assets/plus.svg");
+    animation: plus-icons 0.2s;
+    animation-fill-mode: forwards;
     cursor: pointer;
 }
 
@@ -103,6 +106,26 @@ img {
 
     to {
         transform: scale(1);
+    }
+}
+
+@keyframes plus-icons {
+    from {
+        background: url("./assets/plus.svg") 98%/0.0005rem no-repeat;
+    }
+
+    to {
+        background: url("./assets/plus.svg") 98%/0.9375rem no-repeat;
+    }
+}
+
+@keyframes x-icons {
+    from {
+        background: url("./assets/xmark.svg") 98%/0.0005rem no-repeat;
+    }
+
+    to {
+        background: url("./assets/xmark.svg") 98%/0.9375rem no-repeat;
     }
 }
 
